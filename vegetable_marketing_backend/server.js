@@ -1,5 +1,5 @@
 const express = require("express");
-
+const dotenv=require("dotenv")
 const mongoose=require("mongoose");
 const farmerRouter=require("./routes/farmer");
 const customerRouter=require("./routes/customers")
@@ -13,7 +13,7 @@ const db=require("./utils/database")
 const otpcontroller=require("./routes/otpcontroller")
 const port = process.env.PORT || 4000;
 
-
+dotenv.config();
 const app=express();
 
 app.use(express.json())
