@@ -11,7 +11,7 @@ const addressrouter=require("./routes/address")
 const orderRouter=require("./routes/order")
 const db=require("./utils/database")
 const otpcontroller=require("./routes/otpcontroller")
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 10000;
 
 dotenv.config();
 const app=express();
