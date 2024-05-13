@@ -34,6 +34,6 @@ app.use(express.urlencoded({extended:true}));
 
 db()
 
-app.listen(port,"0.0.0.0",()=>(
+app.listen(port,()=>(
 console.log("server is listening")
 ));
