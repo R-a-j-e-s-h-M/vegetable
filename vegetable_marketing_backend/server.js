@@ -11,6 +11,8 @@ const addressrouter=require("./routes/address")
 const orderRouter=require("./routes/order")
 const db=require("./utils/database")
 const otpcontroller=require("./routes/otpcontroller")
+const port = process.env.PORT || 4000;
+
 
 const app=express();
 
@@ -32,6 +34,6 @@ app.use(express.urlencoded({extended:true}));
 
 db()
 
-app.listen(3000,"0.0.0.0",()=>(
+app.listen(port,"0.0.0.0",()=>(
 console.log("server is listening")
 ));
